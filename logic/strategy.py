@@ -8,5 +8,5 @@ from models.table import Table
 
 
 def decide(table: Table) -> Bet:
-    # Deine Implementierung hier
-    return Bet(bet=table.players[table.activePlayer].stack)
+    player = table.players[table.activePlayer]
+    bet_amount = int(0.2 * player.stack)  # Setzt 20% des Chip-Stacks

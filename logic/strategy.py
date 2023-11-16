@@ -33,4 +33,4 @@ def decide(table: Table) -> Bet:
     if hand_strength==1:
         return Bet(int(0.2 * player.stack))
     if hand_strength==0:
-        return Bet(int(0))
+        return Bet(0)

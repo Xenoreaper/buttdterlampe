@@ -1,10 +1,11 @@
+from typing import List
 from models.bet import Bet
 from models.table import Table
 
 rank_counts = {}
 threshold_strongHand=4
 
-def evaluate_hand(cards: List[Card]) -> str:
+def evaluate_hand(cards: List[dict]) -> str:
     count_suit_HEARTS=0
     count_suit_SPADES=0
     count_suit_CLUBS=0

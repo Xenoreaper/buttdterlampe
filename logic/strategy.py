@@ -54,4 +54,5 @@ def decide(table: Table) -> Bet:
 
 def decide(table: Table) -> Bet:
     # Deine Implementierung hier
+    print("best strategy")
     return Bet(bet=table.players[table.activePlayer].stack)

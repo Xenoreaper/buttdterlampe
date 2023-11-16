@@ -10,13 +10,13 @@ def evaluate_hand(cards: List[Card]) -> str:
     count_suit_CLUBS=0
     count_suit_DIAMONDS=0
     for card in cards:
-        if(card.suit=="HEARTS"):
+        if(card['suit']=="HEARTS"):
             count_suit_HEARTS=count_suit_HEARTS+1
-        if(card.suit=="SPADES"):
+        if(card['suit']=="SPADES"):
             count_suit_SPADES=count_suit_SPADES+1
-        if(card.suit=="CLUBS"):
+        if(card['suit']=="CLUBS"):
             count_suit_CLUBS=count_suit_CLUBS+1
-        if(card.suit=="DIAMONDS"):
+        if(card['suit']=="DIAMONDS"):
             count_suit_DIAMONDS=count_suit_DIAMONDS+1
     if(count_suit_DIAMONDS==threshold_strongHand or count_suit_CLUBS==threshold_strongHand or count_suit_SPADES==threshold_strongHand or count_suit_HEARTS==threshold_strongHand):
         return 1

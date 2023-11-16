@@ -3,7 +3,7 @@ from models.bet import Bet
 from models.table import Table
 
 rank_counts = {}
-threshold_strongHand=4
+threshold_strongHand=2
 
 def evaluate_hand(cards: List[dict]) -> str:
     count_suit_HEARTS=0
